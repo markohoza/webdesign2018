@@ -1,0 +1,220 @@
+// main: master.scss
+/*animation ---------------------------------------------------------------------------------------------------- animation */
+header nav.hamburger ul {
+    -webkit-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+#back_to_top svg {
+    -webkit-transition: margin-top 0.5s ease;
+    transition: margin-top 0.5s ease;
+}
+#back_to_top {
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+#homeSlider .swiper-container .swiper-button-next,
+#homeSlider .swiper-container .swiper-button-prev,
+#testimonials .swiper-container .swiper-button-next,
+#testimonials .swiper-container .swiper-button-prev {
+    -webkit-transition: left 0.5s, right 0.5s ease;
+    transition: left 0.5s, right 0.5s ease;
+}
+#homeSlider .swiper-container .swiper-button-next svg path,
+#homeSlider .swiper-container .swiper-button-prev svg path,
+#testimonials .swiper-container .swiper-button-next svg path,
+#testimonials .swiper-container .swiper-button-prev svg path,
+#socialMedia .socialIcons svg path {
+    -webkit-transition: fill 1s ease;
+    transition: fill 1s ease;
+}
+#teamMembers .boxes .box .infoStrip {
+    -webkit-transition: bottom 1s, opacity 1s, visibility 1s ease;
+    transition: bottom 1s, opacity 1s, visibility 1s ease;
+}
+.swiper-container .swiper-slide .learnMore,
+.swiper-container .swiper-slide .text {
+    -webkit-transition: opacity 2s ease !important;
+    transition: opacity 2s ease !important;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+header a#logo svg {
+    -webkit-transition: height 0.5s ease;
+    transition: height 0.5s ease;
+}
+header nav li a:hover::after,
+header nav li a:focus::after {
+    -webkit-transition: bottom 0.3s, width 0.3s, opacity 0.3s ease, -webkit-box-shadow 1s;
+    transition: bottom 0.3s, width 0.3s, opacity 0.3s ease, -webkit-box-shadow 1s;
+    transition: bottom 0.3s, box-shadow 1s, width 0.3s, opacity 0.3s ease;
+    transition: bottom 0.3s, box-shadow 1s, width 0.3s, opacity 0.3s ease, -webkit-box-shadow 1s;
+}
+header nav li a {
+    -webkit-transition: text-shadow 1s ease;
+    transition: text-shadow 1s ease;
+}
+header {
+    -webkit-transition: background-color 0.5s, padding 0.5s ease;
+    transition: background-color 0.5s, padding 0.5s ease;
+    -moz-transition: background-color 0.5s, padding 0.5s ease;
+    -ms-transition: background-color 0.5s, padding 0.5s ease;
+    -o-transition: background-color 0.5s, padding 0.5s ease;
+}
+#partners .boxes .box,
+#teamMembers .boxes .box,
+.btn,
+button,
+input[type="submit"],
+a, a:visited, a:focus {
+    -webkit-transition: color 0.5s, background 0.5s, background-color 0.5s, -webkit-filter 1s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s ease;
+    transition: color 0.5s, background 0.5s, background-color 0.5s, -webkit-filter 1s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s ease;
+    transition: filter 1s, color 0.5s, background 0.5s, background-color 0.5s, box-shadow 0.5s, transform 0.5s ease;
+    transition: filter 1s, color 0.5s, background 0.5s, background-color 0.5s, box-shadow 0.5s, transform 0.5s ease, -webkit-filter 1s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s ease;
+    transition: filter 1s, color 0.5s, background 0.5s, background-color 0.5s, box-shadow 0.5s, transform 0.5s ease, -webkit-filter 2s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s ease;
+
+}
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+.onScreenAnimation .aniSlideInRight {
+    right: -100vw;
+    position: relative;
+}
+.hamburger.open,
+.onScreenAnimation.play .aniSlideInRight {
+    -webkit-animation-name: aniSlideInRight;
+    animation-name: aniSlideInRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes aniSlideInRight {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0vw;
+    }
+}
+@keyframes aniSlideInRight {
+    0% {
+        right: -100vw;
+    }
+    100% {
+        right: 0vw;
+    }
+}
+.onScreenAnimation .aniSlideOutRight {
+    left: -100vw;
+    position: relative;
+}
+.hamburger,
+.onScreenAnimation.play .aniSlideOutRight {
+    -webkit-animation-name: aniSlideOutRight;
+    animation-name: aniSlideOutRight;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes aniSlideOutRight {
+    0% {
+        right: 0vw;
+    }
+    100% {
+        right: -100vw;
+    }
+}
+@keyframes aniSlideOutRight {
+    0% {
+        right: 0vw;
+    }
+    100% {
+        right: -100vw;
+    }
+}
+.onScreenAnimation .aniSlideInLeft {
+    left: -100vw;
+    position: relative;
+}
+.onScreenAnimation.play .aniSlideInLeft {
+    -webkit-animation-name: aniSlideInLeft;
+    animation-name: aniSlideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes aniSlideInLeft {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+@keyframes aniSlideInLeft {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+.onScreenAnimation .aniPlop {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+}
+.onScreenAnimation.play .aniPlop {
+    -webkit-animation-name: aniPlop;
+    animation-name: aniPlop;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes aniPlop {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes aniPlop {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* end.animation*/

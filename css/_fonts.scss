@@ -1,0 +1,20 @@
+// main: master.scss
+/*fonts ------------------------------------------------------------------------------------------------------------ fonts */;
+$font1: 'Montserrat', sans-serif;
+$font2: 'Roboto Condensed', sans-serif;
+
+p, a, label, body {
+    font-family: $font2;
+    -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 {
+    font-family: $font1;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    font-size: 100%;
+}
+p, a, label {
+    @include font-size(16);
+}
+/* end.fonts */

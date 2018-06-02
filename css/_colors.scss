@@ -1,0 +1,21 @@
+// main: master.scss
+/*colors ---------------------------------------------------------------------------------------------------------- colors */;
+$color-text: #4a4747;
+$color-base: #2d9cff;
+$color-alt: #00ff00;
+
+$color-bg1: #efefef;
+$color-bg2: #f8f8f8;
+
+$color-selection-text: rgba(255, 255, 255, 0.8);
+$color-selection-bg: rgba(0, 0, 0, 0.5);
+$color-focus: rgba(0, 0, 0, 0.5);
+
+body {
+    color: $color-text;
+}
+@include selection{background-color:$color-selection-bg;color:$color-selection-text}
+@if ($focusInput) {
+    @include focusInput{outline: 1px solid $color-focus}
+}
+/* end.colors */

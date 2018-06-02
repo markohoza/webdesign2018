@@ -1,0 +1,81 @@
+// main: master.scss
+/*5 smartphones - portrait */ @media (max-width: 480px) { /*-------------------------------------- smartphones - portrait*/
+#contact {
+    .col1 {
+        .row {
+            display: block;
+        }
+        label.email {
+            margin-top: 25px;
+        }
+    }
+    form {
+        text-align: center;
+    }
+    .box {
+        padding: 20px;
+    }
+}
+#partners {
+    .boxes {
+        display: block;
+        .box {
+            margin: 50px auto;
+        }
+    }
+}
+#testimonials {
+    .swiper-container {
+        .frame {
+            max-width: unset;
+            margin: 0 70px;
+        }
+    }
+}
+#teamMembers {
+    .boxes {
+        display: block;
+        .box {
+            margin: 0 auto 25px !important;
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+            &:hover, &:focus {
+                -webkit-box-shadow: 0 5px 30px rgba(0,0,0,0.2) !important;
+                box-shadow: 0 5px 30px rgba(0,0,0,0.2) !important;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+}
+#projects {
+    .grid {
+        display: block;
+        .item {
+            display: block;
+            width: auto;
+            margin: 40px 20px;
+        }
+    }
+}
+#homeSlider {
+    .swiper-container {
+        height: 100vh;
+        .swiper-slide[data-swiper-slide-index="0"] {
+            background-image: url("../img/homeSlider-001m.jpg");
+        }
+        .swiper-slide[data-swiper-slide-index="1"] {
+            background-image: url("../img/homeSlider-002m.jpg");
+        }
+        .swiper-slide[data-swiper-slide-index="2"] {
+            background-image: url("../img/homeSlider-003m.jpg");
+        }
+        .swiper-slide .text {
+            font-size: 3em;
+        }
+        .swiper-pagination {
+            bottom: 50px !important;
+        }
+    }
+}
+}/* end.smartphones - portrait*/

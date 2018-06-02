@@ -1,0 +1,22 @@
+// main: master.scss
+/*special */ @media (min-width: 960px) and (max-width: 1239px) { /*------------------------------------------------ special*/
+.special {
+}
+}/* end.special*/
+/*special */ @media (min-width: 1300px) { /*------------------------------------------------ special*/
+.center {
+    margin: auto !important;
+}
+}/* end.special*/
+/*special */ @media (min-width: 1250px) { /*------------------------------------------------ special*/
+#recentBlog {
+    .boxes {
+        .box {
+            &:hover, &:focus {
+                -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) !important;
+            }
+        }
+    }
+}
+}/* end.special*/
