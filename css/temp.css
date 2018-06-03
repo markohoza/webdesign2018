@@ -694,6 +694,9 @@ p, a, label {
         min-width: 200px;
         margin-top: 50px;
     }
+    #contact form button.sended {
+        background-color: #1cab11;
+    }
     #contact .box {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1596,6 +1599,16 @@ p, a, label {
     select:focus,
     textarea:focus {
         outline: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    @-webkit-keyframes autofill {
+        to {
+            color: #fff;
+            background: rgba(45, 156, 255, 0.2);
+        }
+    }
+    input:-webkit-autofill {
+        -webkit-animation-name: autofill;
+        -webkit-animation-fill-mode: both;
     }
     /*scrollbar*/
     ::-webkit-scrollbar {

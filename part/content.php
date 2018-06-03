@@ -284,7 +284,7 @@
         <div class="center">
             <div class="col1">
                 <h2>Don’t be shy, Say Hello! </h2>
-                <form action="#" method="post" class="aniSlideInLeft">
+                <form id="contactForm" method="post" class="aniSlideInLeft">
                     <div class="row">
                         <label class="name">
                             <input type="text" name="name" placeholder="Name" required>
@@ -299,7 +299,7 @@
                         <textarea name="message" rows="4" cols="80" placeholder="Message..." required></textarea>
                         <svg width="48" height="48" viewBox="0 0 48 48"><g class="nc-icon-wrapper" fill="#111111"><path d="M40 4H8C5.79 4 4.02 5.79 4.02 8L4 44l8-8h28c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-4 24H12v-4h24v4zm0-6H12v-4h24v4zm0-6H12v-4h24v4z"></path></g></svg>
                     </label>
-                    <button type="" name="button">SEND</button>
+                    <button name="send">SEND</button>
                 </form>
             </div>
             <div class="col2">

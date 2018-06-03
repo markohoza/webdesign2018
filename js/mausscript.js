@@ -129,4 +129,42 @@
         element.classList.add('play');
     });
 
+    //Ajax contactForm
+    $('#contactForm').on('submit', function(event) {
+        event.preventDefault(); //zakázanie defaultnej akcie tlačidla
+
+        var form_name = $('input[name=name]').val();
+        var form_email = $('input[name=email]').val();
+        var form_message = $('textarea[name=message]').val();
+
+        var ajaxContactForm = $.ajax({
+            url: '../func/sendMail.php',
+            type: 'post',
+            data: {
+                ajax: true,
+                name: form_name,
+                email: form_email,
+                message: form_message,
+            },
+        }).done(function(html) {
+            $('button[name=send]').text('SENDED');
+            $('button[name=send]').toggleClass(function() {
+                return "sended";
+            });
+            document.getElementById("contactForm").reset();
+        });
+        $( document ).ajaxStart(function() {
+            $('button[name=send]').text('SENDING...');
+        })
+    });
+    $('#contactForm').on('click', 'input, textarea', function() {
+        if( $('button[name=send]').hasClass('sended')) {
+            console.log('aaa');
+            $('button[name=send]').text('SEND');
+            $('button[name=send]').toggleClass(function() {
+                return "sended";
+            });
+        }
+    });
+
 })(jQuery, window, document);

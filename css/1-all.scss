@@ -130,6 +130,9 @@
         button {
             min-width: 200px;
             margin-top: 50px;
+            &.sended {
+                background-color: rgb(28, 171, 17);
+            }
         }
     }
     .box {
@@ -1012,6 +1015,16 @@ textarea {
     &:focus {
         outline: 1px solid rgba(0, 0, 0, 0.2);
     }
+}
+@-webkit-keyframes autofill {
+    to {
+        color: #fff;
+        background: rgba($color-base,0.2);
+    }
+}
+input:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
 }
 /*scrollbar*/
     ::-webkit-scrollbar {

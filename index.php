@@ -40,6 +40,6 @@
 	<script src="node_modules/swiper/dist/js/swiper.min.js?r=1"></script>
 	<script src="node_modules/scroll-parallax/dist/Parallax.min.js?r=1"></script>
 	<script src="node_modules/onscreen/dist/on-screen.umd.js?r=1"></script>
-	<script src="js/mausscript.js?r=2"></script>
+	<script src="js/mausscript.js?r=6"></script>
 </body>
 </html>
