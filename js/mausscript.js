@@ -159,7 +159,6 @@
     });
     $('#contactForm').on('click', 'input, textarea', function() {
         if( $('button[name=send]').hasClass('sended')) {
-            console.log('aaa');
             $('button[name=send]').text('SEND');
             $('button[name=send]').toggleClass(function() {
                 return "sended";
