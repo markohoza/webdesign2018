@@ -581,7 +581,7 @@ p, a, label {
         -ms-flex-pack: distribute;
         -webkit-box-pack: center;
         justify-content: center;
-        margin: 25px auto 0;
+        padding: 25px 0 0;
     }
     #socialMedia .socialIcons svg {
         width: 25px;
@@ -919,7 +919,7 @@ p, a, label {
         max-width: 500px;
         margin: 20px auto;
         font-size: 1.2em;
-        line-height: 1.6em;
+        line-height: 1.3em;
     }
     #testimonials .swiper-container .swiper-button-next,
     #testimonials .swiper-container .swiper-button-prev {
@@ -1329,6 +1329,27 @@ p, a, label {
     }
     #homeSlider .swiper-container .swiper-pagination-bullet-active {
         background: rgba(255, 255, 255, 0.3);
+    }
+    #preloader {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #fff;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transition: opacity 1s, visibility 1s ease;
+        transition: opacity 1s, visibility 1s ease;
     }
     #preloader .spinner {
         width: 40px;

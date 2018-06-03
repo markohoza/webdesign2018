@@ -207,19 +207,19 @@
     <section id="partners">
         <div class="boxes center">
             <div class="box">
-                <a href="#"><img src="img/logo-microsoft.png" alt=""></a>
+                <a href="#"><img src="img/logo-microsoft.png" alt="microsoft"></a>
             </div>
             <div class="box">
-                <a href="#"><img src="img/logo-envato.png" alt=""></a>
+                <a href="#"><img src="img/logo-envato.png" alt="envato"></a>
             </div>
             <div class="box">
-                <a href="#"><img src="img/logo-dribbble.png" alt=""></a>
+                <a href="#"><img src="img/logo-dribbble.png" alt="dribbble"></a>
             </div>
             <div class="box">
-                <a href="#"><img src="img/logo-spotify.png" alt=""></a>
+                <a href="#"><img src="img/logo-spotify.png" alt="spotify"></a>
             </div>
             <div class="box">
-                <a href="#"><img src="img/logo-google.png" alt=""></a>
+                <a href="#"><img src="img/logo-google.png" alt="google"></a>
             </div>
         </div>
     </section>

@@ -66,10 +66,10 @@
         var swiper = new Swiper('#homeSlider .swiper-container', {
             slidesPerView: 1,
             spaceBetween: 0,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
             parallax: true,
             loop: true,
             grabCursor: true,
@@ -89,10 +89,6 @@
         var swiper = new Swiper('#testimonials .swiper-container', {
             slidesPerView: 1,
             spaceBetween: 0,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
             grabCursor: true,
             parallax: true,
             loop: true,
