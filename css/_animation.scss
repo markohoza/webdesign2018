@@ -71,7 +71,6 @@ a, a:visited, a:focus {
     transition: filter 1s, color 0.5s, background 0.5s, background-color 0.5s, box-shadow 0.5s, transform 0.5s ease;
     transition: filter 1s, color 0.5s, background 0.5s, background-color 0.5s, box-shadow 0.5s, transform 0.5s ease, -webkit-filter 1s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s ease;
     transition: filter 1s, color 0.5s, background 0.5s, background-color 0.5s, box-shadow 0.5s, transform 0.5s ease, -webkit-filter 2s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s ease;
-
 }
 @-webkit-keyframes sk-scaleout {
   0% { -webkit-transform: scale(0) }
